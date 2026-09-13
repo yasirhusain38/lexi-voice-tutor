@@ -1,0 +1,26 @@
+{
+  "name": "lexi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lexi — learn vocabulary by speaking. Voice tutor prototype.",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "npx serve out",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.12",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  }
+}

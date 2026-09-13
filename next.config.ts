@@ -1,15 +1,9 @@
 import type { NextConfig } from "next";
 
-const staticExport = process.env.EXPORT === "1";
-
 const nextConfig: NextConfig = {
+  output: "export",
   images: { unoptimized: true },
-  ...(staticExport
-    ? {
-        output: "export" as const,
-        trailingSlash: true,
-      }
-    : {}),
+  trailingSlash: true,
 };
 
 export default nextConfig;

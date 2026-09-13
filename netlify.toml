@@ -2,8 +2,17 @@
   command = "npm run build"
   publish = "out"
 
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_TELEMETRY_DISABLED = "1"
+
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

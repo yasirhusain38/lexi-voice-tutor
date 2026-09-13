@@ -37,20 +37,14 @@ npx serve out
 
 ## Deploy (public URL)
 
-No server required at runtime, no env vars, no API keys.
+`npm run build` writes a static site to `out/`. Netlify is already pointed at that folder.
 
 ```bash
 npm run build
 npx serve out
 ```
 
-To emit a static `out/` folder for Netlify Drop or GitHub Pages, build with:
-
-```bash
-$env:EXPORT="1"; npx next build
-```
-
-Or keep using Vercel, which builds this Next.js app directly.
+Then drag `out` onto [Netlify Drop](https://app.netlify.com/drop), or push the repo and let Netlify run `npm run build` (publish directory: `out`).
 
 ### Netlify Drop
 
